@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Advanced Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">amazon</div>
+
+    <input type="text" id="search button" placeholder="Search products...">
+
+    <div class="nav-icons">
+        <span onclick="openWishlist()">❤️ Wishlist</span>
+        <span onclick="openOrders()">📦 Orders</span>
+        <span onclick="openCart()">🛒 Cart (<span id="cart-count">0</span>)</span>
+    </div>
+</nav>
+
+<!-- PRODUCTS -->
+<section class="products" id="product-list"></section>
+
+<!-- CART PANEL -->
+<div class="side-panel" id="cart-panel">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="placeOrder()">Place Order</button>
+    <button onclick="closePanel('cart-panel')">Close</button>
+</div>
+
+<!-- WISHLIST PANEL -->
+<div class="side-panel" id="wishlist-panel">
+    <h2>Your Wishlist</h2>
+    <ul id="wishlist-items"></ul>
+    <button onclick="closePanel('wishlist-panel')">Close</button>
+</div>
+
+<!-- ORDER PANEL -->
+<div class="side-panel" id="order-panel">
+    <h2>Your Orders</h2>
+    <ul id="order-items"></ul>
+    <button onclick="closePanel('order-panel')">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- HERO BACKGROUND -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Big Sale is Live 🔥</h1>
+        <p>Up to 50% Off on Electronics</p>
+        <button onclick="openCart()">Shop Now</button>
+    </div>
+</section>
