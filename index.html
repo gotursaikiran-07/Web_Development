@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="app">
+  <h1>📝 Smart Task Manager</h1>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="What do you need to do?">
+    <button id="addBtn"><i class="fas fa-plus"></i></button>
+  </div>
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="pending">Pending</button>
+    <button class="filter" data-filter="completed">Completed</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
